@@ -34,6 +34,24 @@ const Subtitle = styled.p`
   margin: 0.5rem 0 0 0;
 `;
 
+const AuthorsContainer = styled.div`
+  margin-top: 1.5rem;
+  text-align: center;
+`;
+
+const AuthorsList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #e0e0e0;
+`;
+
+const AuthorName = styled.span`
+  font-weight: 500;
+  color: #4a90e2;
+`;
+
 const MainContent = styled.main`
   padding: 2rem;
   max-width: 1400px;
@@ -56,8 +74,18 @@ function App() {
       <Header>
         <Title>Diagrama HR Interactivo</Title>
         <Subtitle>
-          Explora las estrellas y sus propiedades astronómicas
+          Explora las estrellas y sus propiedades astronómicas.
         </Subtitle>
+        <AuthorsContainer>
+          <AuthorsList>
+            <div>
+              <AuthorName>Maria Antonia Acevedo Garcia</AuthorName>
+            </div>
+            <div>
+              <AuthorName>Melissa Rua Vasquez</AuthorName>
+            </div>
+          </AuthorsList>
+        </AuthorsContainer>
       </Header>
 
       <MainContent>
