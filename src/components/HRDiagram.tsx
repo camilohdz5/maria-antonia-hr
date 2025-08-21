@@ -8,7 +8,6 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  Cell,
 } from "recharts";
 import type { StarData } from "../types/StarData";
 import { starDatabase, getStarColor, getStarSize } from "../data/starDatabase";
@@ -26,13 +25,6 @@ const DiagramTitle = styled.h2`
   color: #4a90e2;
   margin-bottom: 1rem;
   font-size: 1.8rem;
-`;
-
-const AxisLabels = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-top: 1rem;
 `;
 
 const XAxisLabel = styled.div`
